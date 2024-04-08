@@ -25,12 +25,14 @@ public class CambiaVocales {
                 System.out.print("\t");
                 cadena = teclado.nextLine();
                 if(!cadena.equalsIgnoreCase("FIN")) {
+                    if(cadena.length() > 80){
+                        System.out.println("Excede el tamaño");
+                        cadena = cadena.substring(0, 80);
+                    }
                     salida.println(cadena);
                     contador++;
                 }
-                if(cadena.length() > 80){
-                    cadena = cadena.substring(0, 80);
-                }
+
             } while (!cadena.equalsIgnoreCase("FIN") && contador < 6);
             salida.flush();
             System.out.println("\n\t\t\t\t\t\033[1moo00 Las líneas se han escrito en el fichero 00oo\033[0m");
