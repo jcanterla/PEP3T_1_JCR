@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.FileReader;
 import java.io.BufferedReader;
 
-public class CambiaVocales {
+class PEP3T_1_JCR {
     public static void main(String[] args) {
         System.out.println("\t\t\t\t\t\t\t\t\033[1;4mPROGRAMA CAMBIA VOCALES\033[0m\n");
         escrituraFichero();
